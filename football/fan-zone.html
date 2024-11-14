@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fan Zone - Rookie Review</title>
+    
+</head>
+<style>
+    /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: #1b1b1b;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+.fan-zone-header {
+    background-color: #303030;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #ffcc00;
+}
+
+.fan-zone-header h1 {
+    font-size: 2.5em;
+    color: #ffcc00;
+}
+
+.fan-zone-header p {
+    font-size: 1.2em;
+    color: #f0f0f0;
+}
+
+/* Navigation Styling */
+.fan-zone-nav {
+    background-color: #252525;
+    padding: 10px 0;
+}
+
+.fan-zone-nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.fan-zone-nav ul li {
+    margin: 0 15px;
+}
+
+.fan-zone-nav ul li a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+.fan-zone-nav ul li a:hover {
+    color: #e0e0e0;
+}
+
+/* Section Styling */
+.section {
+    padding: 40px 20px;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 1000px;
+    background-color: #2c2c2c;
+    border-radius: 8px;
+    border: 1px solid #444;
+}
+
+.section h2 {
+    font-size: 2em;
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+.section p {
+    font-size: 1em;
+    color: #cccccc;
+    margin-bottom: 20px;
+}
+
+/* Button Styling */
+.section button {
+    background-color: #ffcc00;
+    color: #1b1b1b;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+}
+
+.section button:hover {
+    background-color: #e6b800;
+}
+
+/* Gallery Styling */
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.gallery img {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    border: 2px solid #444;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    border-color: #ffcc00;
+}
+
+/* Footer Styling */
+.fan-zone-footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #252525;
+    border-top: 2px solid #444;
+    color: #cccccc;
+    font-size: 0.9em;
+}
+
+</style>
+<body>
+
+    <!-- Header Section -->
+    <header class="fan-zone-header">
+        <h1>Welcome to the Fan Zone!</h1>
+        <p>Connect, celebrate, and get closer to the game!</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="fan-zone-nav">
+        <ul>
+            <li><a href="#live-chat">Live Chat</a></li>
+            <li><a href="#polls-predictions">Polls & Predictions</a></li>
+            <li><a href="#exclusive-merch">Exclusive Merch</a></li>
+            <li><a href="#fan-art">Fan Art & Photos</a></li>
+            <li><a href="#meet-greet">Meet & Greet</a></li>
+            <li><a href="#gaming-zone">Gaming Zone</a></li>
+        </ul>
+    </nav>
+
+    <!-- Live Match Chat & Watch Party -->
+    <section id="live-chat" class="section">
+        <h2>Live Match Chat & Watch Party</h2>
+        <p>Join the conversation during live games. Cheer on your favorite team, share your thoughts, and connect with fans from around the world!</p>
+        <button>Join Live Chat</button>
+        <button>Start Watch Party</button>
+    </section>
+
+    <!-- Polls & Predictions -->
+    <section id="polls-predictions" class="section">
+        <h2>Polls & Predictions</h2>
+        <p>Vote on upcoming matches, predict scores, and win rewards for accurate guesses.</p>
+        <button>Vote Now</button>
+        <button>Make Predictions</button>
+    </section>
+
+    <!-- Exclusive Merchandise -->
+    <section id="exclusive-merch" class="section">
+        <h2>Exclusive Merchandise</h2>
+        <p>Explore limited-edition merchandise and personalized items, only available to Fan Zone members.</p>
+        <button>Shop Now</button>
+    </section>
+
+    <!-- Fan Art & Photography Wall -->
+    <section id="fan-art" class="section">
+        <h2>Fan Art & Photography</h2>
+        <p>Showcase your creativity! Submit your fan art, photos, and more to be featured in the Fan Zone gallery.</p>
+        <button>Submit Your Art</button>
+        <div class="gallery">
+            <!-- Placeholder for fan art submissions -->
+            <img src="fan-art1.jpg" alt="Fan Art 1">
+            <img src="fan-art2.jpg" alt="Fan Art 2">
+            <img src="fan-photo1.jpg" alt="Fan Photo 1">
+        </div>
+    </section>
+
+    <!-- Meet & Greet with Legends and Mascots -->
+    <section id="meet-greet" class="section">
+        <h2>Meet & Greet</h2>
+        <p>Get closer to the game with exclusive meet-and-greet sessions with players, legends, and mascots.</p>
+        <button>Join a Session</button>
+    </section>
+
+    <!-- Gaming and Esports Zone -->
+    <section id="gaming-zone" class="section">
+        <h2>Gaming Zone</h2>
+        <p>Test your skills with fellow fans! Play sports games, fantasy leagues, and join mini esports tournaments.</p>
+        <button>Play Now</button>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="fan-zone-footer">
+        <p>&copy; 2024 Rookie Review Fan Zone. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
