@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Today's Fixtures - Live Scores</title>
+    <style>
+        /* General body styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Header styling */
+        header {
+            background-color: #1b263b;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        /* Fixture section styling */
+        .fixtures-container {
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: white;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #1b263b;
+        }
+
+        /* Fixture item */
+        .fixture-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 15px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .fixture-item:last-child {
+            border-bottom: none;
+        }
+
+        .league-name {
+            font-size: 16px;
+            font-weight: bold;
+            color: #0056b3;
+        }
+
+        .teams {
+            font-size: 14px;
+        }
+
+        .match-time {
+            font-size: 14px;
+            color: #555;
+        }
+
+        /* Loader animation */
+        .loader {
+            text-align: center;
+            margin: 20px;
+            font-size: 16px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <!-- Page Header -->
+    <header>
+        Rookie Review - Today's Fixtures
+    </header>
+
+    <!-- Fixtures Section -->
+    <div class="fixtures-container">
+        <h2>Today's Fixtures</h2>
+        <div id="fixtures"></div>
+        <div id="loader" class="loader">Loading today's fixtures...</div>
+    </div>
+
+    <!-- JavaScript to Fetch Data -->
+    <script>
+const API_KEY = '07b572cae26ff592df17c8945021a6c3'; // Your API key
+const API_URL = 'https://v3.football.api-sports.io/fixtures?date=';
+
+async function fetchFixtures() {
+    const today = '2024-12-17'; // Today's date (manually set for testing)
+    const url = `${API_URL}${today}`;
+
+    try {
+        const response = await fetch(url, {
+            method: 'GET',
+            headers: {
+                'x-apisports-key': API_KEY,  // Your API key here
+                'x-apisports-host': 'v3.football.api-sports.io'
+            }
+        });
+
+        const data = await response.json();
+        
+        // Check if the API returned an error
+        if (data.errors) {
+            console.error('Error:', data.errors);
+            alert('Error loading fixtures!');
+            return;
+        }
+
+        // Check if fixtures are present
+        if (data.response && data.response.length > 0) {
+            console.log('Fixtures:', data.response);
+            // Now, loop through the fixtures and display them
+            displayFixtures(data.response);
+        } else {
+            console.log('No fixtures found for today.');
+            alert('No fixtures found for today!');
+        }
+
+    } catch (error) {
+        console.error('Error fetching fixtures:', error);
+        alert('Error fetching fixtures!');
+    }
+}
+
+function displayFixtures(fixtures) {
+    const fixturesContainer = document.getElementById('fixtures-container');
+    fixturesContainer.innerHTML = ''; // Clear any existing content
+
+    fixtures.forEach(fixture => {
+        const fixtureDiv = document.createElement('div');
+        fixtureDiv.classList.add('fixture-item');
+        fixtureDiv.innerHTML = `
+            <p><strong>${fixture.league.name}</strong></p>
+            <p>${fixture.homeTeam.team.name} vs ${fixture.awayTeam.team.name}</p>
+            <p>Time: ${fixture.fixture.datetime}</p>
+        `;
+        fixturesContainer.appendChild(fixtureDiv);
+    });
+}
+
+// Call the function when the page loads
+fetchFixtures();
+console.log(data);
+    </script>
+
+    <div id="fixtures-container"></div>
+    
+
+</body>
+</html>
