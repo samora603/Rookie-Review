@@ -27,13 +27,12 @@ function HomePage() {
 
       {/* Header */}
       <header className="top-header">
-        <div className="site-title">Rookie Review</div>
+        <div className="site-title"></div>
         <nav className="navbar">
           <ul>
             <li><Link to="/">Home</Link></li>
             <li><Link to="/news">News</Link></li>
             <li><Link to="/tournaments">Tournaments</Link></li>
-            <li><Link to="/highlights">Highlights</Link></li>
             <li><Link to="/scores">Scores and fixtures</Link></li>
             <li><Link to="/fan-zone">Fan Zone</Link></li>
           </ul>

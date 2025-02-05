@@ -1,0 +1,133 @@
+    /* General Reset */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+    
+    /* Body Styling */
+    body {
+        background-color: #fff;
+        color: #e0e0e0;
+        line-height: 1.6;
+    }
+    
+    /* Header Styling */
+    .fan-zone-header {
+        background-color: #1b263b;
+        padding: 20px;
+        text-align: center;
+        border-bottom: 2px solid #ffcc;
+    }
+    
+    .fan-zone-header h1 {
+        font-size: 2.5em;
+        color: #ffcc00;
+    }
+    
+    .fan-zone-header p {
+        font-size: 1.2em;
+        color: #f0f0f0;
+    }
+    
+    /* Navigation Styling */
+    .fan-zone-nav {
+        background-color: #1b263b;
+        padding: 10px 0;
+    }
+    
+    .fan-zone-nav ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+    }
+    
+    .fan-zone-nav ul li {
+        margin: 0 15px;
+    }
+    
+    .fan-zone-nav ul li a {
+        color: #ffcc00;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1em;
+        transition: color 0.3s ease;
+    }
+    
+    .fan-zone-nav ul li a:hover {
+        color: #e0e0e0;
+    }
+    
+    /* Section Styling */
+    .section {
+        padding: 40px 20px;
+        text-align: center;
+        margin: 20px auto;
+        max-width: 1000px;
+        background-color: #1b263b;
+        border-radius: 8px;
+        border: 1px solid #444;
+    }
+    
+    .section h2 {
+        font-size: 2em;
+        color: #ffcc00;
+        margin-bottom: 10px;
+    }
+    
+    .section p {
+        font-size: 1em;
+        color: #cccccc;
+        margin-bottom: 20px;
+    }
+    
+    /* Button Styling */
+    .section button {
+        background-color: #ffcc00;
+        color: #1b1b1b;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1em;
+        font-weight: bold;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin: 5px;
+    }
+    
+    .section button:hover {
+        background-color: #e6b800;
+    }
+    
+    /* Gallery Styling */
+    .gallery {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-top: 20px;
+    }
+    
+    .gallery img {
+        width: 150px;
+        height: 150px;
+        border-radius: 8px;
+        border: 2px solid #444;
+        transition: transform 0.3s ease;
+    }
+    
+    .gallery img:hover {
+        transform: scale(1.05);
+        border-color: #ffcc00;
+    }
+    
+    /* Footer Styling */
+    .fan-zone-footer {
+        text-align: center;
+        padding: 15px 0;
+        background-color: #252525;
+        border-top: 2px solid #444;
+        color: #cccccc;
+        font-size: 0.9em;
+    }

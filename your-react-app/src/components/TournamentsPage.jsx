@@ -19,9 +19,8 @@ function TournamentsPage() {
         <Link to="/">Home</Link>
         <Link to="/news">News</Link>
         <Link to="/tournaments">Tournaments</Link>
-        <Link to="/highlights">Highlights</Link>
         <Link to="/scores">Scores and Fixtures</Link>
-        <Link to="/fanzone">Fanzone</Link>
+        <Link to="/fan-zone">Fanzone</Link>
       </nav>
 
       {/* Tournaments Section */}

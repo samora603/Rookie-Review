@@ -22,7 +22,8 @@ import UclFixtures from './components/UclFixtures';
 import EuropaLeague from './components/EuropaLeague';
 import UelFixtures from './components/UelFixtures';
 import Standings from './components/Standings';
-
+import FanZone from './components/FanZone';
+import ScoresFixtures from './components/ScoresFixtures';
 function App() {
   return (
     <Router>
@@ -52,6 +53,8 @@ function App() {
           <Route path="/uel" element={<EuropaLeague />} />
           <Route path="/uel-fixtures" element={<UelFixtures />} />     
           <Route path="/standings" element={<Standings />} />     
+          <Route path="/fan-zone" element={<FanZone />} />
+          <Route path="/scores" element={<ScoresFixtures />} />
 
           {/* 404 Page Not Found route */}
           <Route path="*" element={<h2>404 Page Not Found</h2>} />
