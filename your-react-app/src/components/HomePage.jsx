@@ -3,6 +3,7 @@ import "../styles/main.css"; // Import the CSS file
 import { Link } from 'react-router-dom';
 
 // Importing images at the top
+
 import rookieReviewLogo from "../images/RR images/rookie review logo.png";
 import uelImage from "../images/Uel img/Uel 1.jpeg";
 import uclImage from "../images/Ucl img/Ucl 1.jpeg";

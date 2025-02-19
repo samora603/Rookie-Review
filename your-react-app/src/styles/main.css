@@ -6,8 +6,9 @@ body {
     background-color: #f4f4f9; /* Light background */
     color: #ffcc00; /* Dark text */
     height: 100%;
-    width: 100%;
+    max-width: 100%;
     box-sizing: border-box;
+    -ms-transform-origin-x: auto !important;
 }
 
 h1, h2, p, li{
@@ -39,7 +40,7 @@ h1, h2, p, li{
 
 .site-header .logo img {
     height: 60px;
-    margin-right: 15px;
+    margin-right: 
 }
 
 .site-header .news-header {
@@ -175,4 +176,4 @@ footer {
 
 footer p {
     margin: 0;
-}
+} 

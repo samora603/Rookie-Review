@@ -29,7 +29,7 @@ function App() {
     <Router>
       <div>
         {/* Optional: Navigation links could go here */}
-        
+       
         {/* Set up routing */}
         <Routes>
           {/* Define routes for each page */}
