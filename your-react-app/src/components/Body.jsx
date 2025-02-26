@@ -1,8 +1,4 @@
-import React from "react";
-import { Link } from 'react-router-dom';
-import MyNavbar from "./MyNavbar";
 import { Container, Row, Col, Card } from "react-bootstrap";
-import Body from "./Body";
 
 import uelImage from "../images/Uel img/Uel 1.jpeg";
 import uclImage from "../images/Ucl img/Ucl 1.jpeg";
@@ -25,12 +21,24 @@ const cardsData = [
 
 ];
 
-function HomePage() {
+function Body() {
   return (
-    <>
-    <MyNavbar />
-    <Body />
-    </>
+    <Container className="my-4">
+      <Row>
+        {cardsData.map((card, index) => (
+          <Col key={index} xs={12} sm={6} md={4} lg={4} className="mb-4">
+            <Card className="h-100 shadow bg-dark text-warning">
+              <Card.Img variant="top" src={card.img} alt={card.title} />
+              <Card.Body>
+                <Card.Title>{card.title}</Card.Title>
+                <Card.Text>{card.text}</Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+        ))}
+      </Row>
+    </Container>
   );
 }
-export default HomePage;
+
+export default Body;

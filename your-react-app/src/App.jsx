@@ -1,5 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
+
+
 
 // Import your components/pages
 import HomePage from './components/HomePage';
@@ -24,12 +28,13 @@ import UelFixtures from './components/UelFixtures';
 import Standings from './components/Standings';
 import FanZone from './components/FanZone';
 import ScoresFixtures from './components/ScoresFixtures';
+import MyNavbar from './components/MyNavbar';
+import Body from './components/Body';
 function App() {
   return (
     <Router>
       <div>
-        {/* Optional: Navigation links could go here */}
-       
+        {/* Optional: Navigation links could go here */}   
         {/* Set up routing */}
         <Routes>
           {/* Define routes for each page */}
