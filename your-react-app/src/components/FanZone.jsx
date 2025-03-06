@@ -6,9 +6,12 @@ import "../styles/fanzone.css"; // Ensure correct CSS import
 import fanArt1 from "../images/fanzone/_.jpeg";
 import fanArt2 from "../images/fanzone/Messi as a GTA6 character.jpeg";
 import fanArt3 from "../images/fanzone/Messi wallpaper.jpeg";
+import MyNavbar from "./MyNavbar";
 
 function FanZone() {
   return (
+    <>
+    <MyNavbar/>
     <div>
       {/* Header Section */}
       <header className="fan-zone-header">
@@ -82,6 +85,8 @@ function FanZone() {
         <p>&copy; 2024 Rookie Review Fan Zone. All rights reserved.</p>
       </footer>
     </div>
+    </>
+
   );
 }
 

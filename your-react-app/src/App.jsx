@@ -8,7 +8,6 @@ import './App.css';
 // Import your components/pages
 import HomePage from './components/HomePage';
 import NewsPage from './components/NewsPage';
-import TournamentsPage from './components/TournamentsPage';
 import Bundesliga from './components/Bundesliga';
 import BundesligaFixtures from './components/BundesligaFixtures';
 import ConferenceLeague from './components/ConferenceLeague';
@@ -40,7 +39,6 @@ function App() {
           {/* Define routes for each page */}
           <Route path="/" element={<HomePage />} />
           <Route path="/news" element={<NewsPage />} />
-          <Route path="/tournaments" element={<TournamentsPage />} />
           <Route path="/bundesliga" element={<Bundesliga />} />
           <Route path="/bundesliga-fixtures" element={<BundesligaFixtures />} />
           <Route path="/conference-league" element={<ConferenceLeague />} />

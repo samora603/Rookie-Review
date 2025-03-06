@@ -45,13 +45,13 @@ function MyNavbar() {
             <Nav.Link href="/news" className="text-white mx-3">News</Nav.Link>
             <NavDropdown title="Tournaments" id="basic-nav-dropdown" className="mx-3">
               <NavDropdown.Item href="epl">Premier League</NavDropdown.Item>
-              <NavDropdown.Item href="bundesliga">Bundesliga</NavDropdown.Item>
               <NavDropdown.Item href="laliga">Laliga</NavDropdown.Item>
-              <NavDropdown.Item href="conference-league">conference-league</NavDropdown.Item>
-              <NavDropdown.Item href="ucl">Champions League</NavDropdown.Item>
-              <NavDropdown.Item href="uel">Europa League</NavDropdown.Item>
+              <NavDropdown.Item href="bundesliga">Bundesliga</NavDropdown.Item>
               <NavDropdown.Item href="seria-a">Seria-A</NavDropdown.Item>
               <NavDropdown.Item href="ligue-1">Ligue-1</NavDropdown.Item>
+              <NavDropdown.Item href="ucl">Champions League</NavDropdown.Item>
+              <NavDropdown.Item href="uel">Europa League</NavDropdown.Item>
+              <NavDropdown.Item href="conference-league">Conference-league</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="#scores" className="text-white mx-3">Scores and Fixtures</Nav.Link>
             <Nav.Link href="fan-zone" className="text-white mx-3">Fan Zone</Nav.Link>
