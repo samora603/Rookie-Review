@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import MyNavbar from "./MyNavbar";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import Body from "./Body";
+import Sidebar from "./Sidebar";
+
 
 // Importing images
 import logo from '../images/RR images/rookie review logo.png';
@@ -29,16 +31,19 @@ const cardsData = [
   { title: "Laliga 9", text: "City out of the Fa cup after loss to liverpool...", img: laliga1 },
 
 ];
+const laligaLinks = [
+  { href: "/", text: "Home" },
+  { href: "/standings", text: "Standings" },
+  { href: "/fixtures", text: "Fixtures" },
+  { href: "/results", text: "Results" },
+  { href: "/stats", text: "Stats" },
+];
 
 function LaligaPage() {
   return (
     <>
     <MyNavbar />
-        <img 
-          src={laligaLogo}
-          alt="Laliga logo" 
-          style={{ height: "150px", marginRight: "15px" }} 
-        />
+    <Sidebar logo={laligaLogo} links={laligaLinks}/>
     <Container className="my-4">
       <Row>
         {cardsData.map((card, index) => (

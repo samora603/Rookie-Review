@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import MyNavbar from "./MyNavbar";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import Body from "./Body";
+import Sidebar from "./Sidebar";
+
 
 // Importing images
 import logo from '../images/RR images/rookie review logo.png';
@@ -27,16 +29,20 @@ const cardsData = [
   { title: "Seria A 9", text: "City out of the Fa cup after loss to liverpool...", img: seria3 },
 
 ];
+const seriaALinks = [
+  { href: "/", text: "Home" },
+  { href: "/standings", text: "Standings" },
+  { href: "/fixtures", text: "Fixtures" },
+  { href: "/results", text: "Results" },
+  { href: "/stats", text: "Stats" },
+];
 
 function SeriaApage() {
   return (
     <>
     <MyNavbar />
-        <img 
-          src={seriaLogo}
-          alt="Laliga logo" 
-          style={{ height: "150px", marginRight: "15px" }} 
-        />
+    <Sidebar logo={seriaLogo} links={seriaALinks}/>
+
     <Container className="my-4">
       <Row>
         {cardsData.map((card, index) => (

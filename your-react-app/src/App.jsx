@@ -29,6 +29,7 @@ import FanZone from './components/FanZone';
 import ScoresFixtures from './components/ScoresFixtures';
 import MyNavbar from './components/MyNavbar';
 import Body from './components/Body';
+import Sidebar from './components/Sidebar';
 function App() {
   return (
     <Router>

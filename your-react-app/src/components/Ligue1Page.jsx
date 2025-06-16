@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import MyNavbar from "./MyNavbar";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import Body from "./Body";
+import Sidebar from "./Sidebar";
+
 
 // Importing images
 import logo from '../images/RR images/rookie review logo.png';
@@ -26,16 +28,19 @@ const cardsData = [
   { title: "Ligue 1 9", text: "City out of the Fa cup after loss to liverpool...", img: ligue3 },
 
 ];
+const ligue1Links = [
+  { href: "/", text: "Home" },
+  { href: "/standings", text: "Standings" },
+  { href: "/fixtures", text: "Fixtures" },
+  { href: "/results", text: "Results" },
+  { href: "/stats", text: "Stats" },
+];
 
 function Ligue1Page() {
   return (
     <>
     <MyNavbar />
-        <img 
-          src={ligue1Logo}
-          alt="Laliga logo" 
-          style={{ height: "150px", marginRight: "15px" }} 
-        />
+    <Sidebar logo={ligue1Logo} links={ligue1Links}/>
     <Container className="my-4">
       <Row>
         {cardsData.map((card, index) => (
